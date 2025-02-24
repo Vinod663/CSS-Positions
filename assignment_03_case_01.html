@@ -6,13 +6,155 @@
   <title>Title</title>
   <link rel="stylesheet" href="/assets/lib/normalize.css">
   <style>
+  body{
+    overflow: hidden;
+  }
+
+  body>div.main{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+  }
+
+  body>div.main:first-child{
+    background: red;
+  }
+
+  body>div.main:nth-child(2){
+    background: green;
+    right: 0;
+  }
+
+  body>div.main:nth-child(3){
+    background: orange;
+    left: 0;
+    bottom: 0;
+  }
+
+  body>div.main:nth-child(4){
+    background: deeppink;
+    right: 0;
+    bottom: 0;
+  }
+
+  body>div.main>div{
+    width: 15vw;
+    aspect-ratio: 1/1;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  body>div.main>div>div{
+    width: 5vw;
+    aspect-ratio: 1/1;
+    background: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  body>div:nth-child(5){
+    width: 15vw;
+    aspect-ratio: 1/1;
+    background: white;
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  body>div:nth-child(5)>div{
+    width: 8vw;
+    aspect-ratio: 1/1;
+    background: red;
+    border-radius: 100%;
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  body>div.corner{
+    width: 10vw;
+    aspect-ratio: 1/1;
+    background: white;
+    position: absolute;
+  }
+
+  body>div:nth-child(6){
+    top: 0;
+    left: 0;
+    border-radius: 0 0 100% 0;
+  }
+
+  body>div:nth-child(7){
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 100%;
+  }
+
+  body>div:nth-child(8){
+    right: 0;
+    bottom: 0;
+    border-radius: 100% 0 0 0;
+  }
+
+  body>div:nth-child(9){
+    bottom: 0;
+    left: 0;
+    border-radius:0 100% 0 0;
+  }
+
+  body>div:nth-child(10){
+    left: 0;
+    right: 0;
+    top: -5vw;
+    margin: auto;
+    border-radius:0 0 100% 100%;
+  }
+
+  body>div:nth-child(11){
+    left: 0;
+    right: 0;
+    bottom: -5vw;
+    margin: auto;
+    border-radius:100% 100% 0 0;
+  }
 
   </style>
 
 </head>
 
 <body>
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div class="main"><div><div></div></div></div>
+  <div class="main"><div><div></div></div></div>
+  <div class="main"><div><div></div></div></div>
+  <div class="main"><div><div></div></div></div>
+
+  <div><div></div></div>
+
+  <div class="corner"></div>
+  <div class="corner"></div>
+  <div class="corner"></div>
+  <div class="corner"></div>
+
+  <div class="corner"></div>
+  <div class="corner"></div>
 
 </body>
 </html>

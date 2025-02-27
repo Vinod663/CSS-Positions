@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-02</title>
+
+    <link rel="stylesheet" href="/assets/lib/normalize.css">
+
+    <style>
+
+        .fixed-circle-gray{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 20vw;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            border:solid 1vw dimgray;
+        }
+        .fixed-circle-red{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 18vw;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            border:solid 1vw red;
+        }
+
+        section{
+            position: relative;
+            width: auto;
+            height: 100vh;
+        }
+
+        h1{
+            font-family: "Bitstream Charter",sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 2vw;
+        }
+
+        body > section:nth-child(2) > div {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            width: 18vw;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: rebeccapurple;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+
+        body > section:nth-child(3) > div {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            width: 18vw;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: deepskyblue;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        body > section:last-child > div {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            width: 18vw;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: lightcoral;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="fixed-circle-gray">
+        <div class="fixed-circle-red"></div>
+    </div>
+
+    <section>
+        <div><h1>Hello</h1></div>
+    </section>
+
+    <section>
+        <div><h1>Welcome To</h1></div>
+    </section>
+
+    <section>
+        <div><h1>Institute of Software Engineering</h1></div>
+    </section>
+
+
+
+</body>
+</html>

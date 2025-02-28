@@ -59,9 +59,9 @@
             border-radius: 100%;
             background-color: rebeccapurple;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex;/*This makes the box flexible so things inside it can be arranged easily.*/
+            align-items: center; /*This moves the item to the middle from top to bottom (vertically).*/
+            justify-content: center; /*This moves the item to the middle from left to right (horizontally).*/
 
         }
 
@@ -86,7 +86,7 @@
 
         }
 
-        body > section:last-child > div {
+        body > section:nth-child(4) > div {
             position: absolute;
             top: 0;
             bottom: 0;

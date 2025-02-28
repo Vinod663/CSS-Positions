@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case-02</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+        *{
+            margin: 0; /*Space outside the box, between other elements.*/
+            padding: 0;/*Space inside the box, around the content.*/
+            box-sizing: border-box;/*prevents elements from unexpectedly growing.*/
+            text-decoration: none;/*By default, links (<a>) have an underline. text-decoration: none; removes the underline!*/
+            border: none;
+            outline: none;/*outline outside the element*/
+            scroll-behavior: smooth;
+            font-family: "Nunito", serif;
+           overflow-x: hidden;
+        }
+
+        /*html{
+        overflow: hidden;
+            !*font-size: 62.5%;*!
+
+        }*/
+
+        body{
+            background: transparent;
+            color: dimgray;
+        }
+
+        .header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 7vh;
+            padding: 1vh 1vw;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;/*vertically*/
+            z-index: 10;
+            outline: solid black 0.5vh;
+            /*border: solid black;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;*/
+
+        }
+
+        header>img{
+            width: 17vh;
+
+        }
+
+        .navbar a{
+            font-size: 1.3vw;
+            color: dimgray;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover,.navbar a:active{
+            color: black;
+        }
+
+        #menu-icon{
+            font-size: 3.6rem;
+            color: dimgray;
+            display: none;
+
+        }
+
+        .category{
+            top: 7vh;
+            bottom: 5vh;
+            position: absolute;
+            width: 20vw;
+            height: 100vh;
+            background-color: rebeccapurple;
+            z-index: 20;
+        }
+
+        .category>div a{
+            position: absolute;
+            font-size: 1vw;
+            color: white;
+            font-weight: bold;
+            margin-top: 3vh;
+            margin-left: 2vw;
+
+        }
+        .category > div>ul li {
+            margin-bottom: 1vh; /* Adjust this value for more or less space */
+        }
+        .banner {
+            font-size: 0; /* Removes inline-block whitespace gap */
+            height: 50vh;
+            position: relative;
+            margin-left: 20.5vw;
+            top: 8vh;
+
+        }
+
+        .banner > div {
+            display: inline-block;
+            width: 26vw; /* Adjust width so they fit in one row */
+            height: 30vh;
+            box-sizing: border-box;
+            border-top: 0.3vh solid saddlebrown;
+            border-bottom: 0.3vh solid green;
+            /*border-right: 0.3vh solid green;
+            border-left: 0.3vh solid green;*/
+            background-color: floralwhite;
+
+        }
+
+        .banner > :first-child  {
+            border-left: 0.3vh solid saddlebrown;
+            border-right: 0.3vh solid green;
+
+        }
+
+        .banner > :nth-child(3)  {
+            border-right: 0.3vh solid saddlebrown;
+            border-left: 0.3vh solid green;
+
+        }
+
+        .gif{
+            width: 26vw;
+            height: 29.5vh;
+
+
+        }
+
+
+        footer{
+            position: fixed;
+            background-color: dimgray;
+            height: 5vh;
+            width: 100vw;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex; /* Using flexbox for better centering */
+            align-items: center; /* Centers vertically */
+            justify-content: center; /* Centers horizontally */
+            z-index: 30;
+        }
+
+        .paragraph{
+            top: -10vh;
+            left: 20.5vw;
+
+            position: relative;
+            color: black;
+            width: fit-content; /* Shrinks to fit text */
+            max-width: 79vw;
+            word-wrap: break-word; /* Ensures long words don’t overflow */
+        }
+        footer>h5{
+            position: absolute;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--Header Design-->
+<header class="header">
+    <img src="assets/images/png/ijse@1x.png" class="logo" alt="IJSE">
+    <!--<a href="assets/images/png/ijse@1x.png" class="logo"></a>-->
+    <i class="fa-solid fa-bars-staggered" id="menu-icon"></i>
+
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contacts</a>
+        <a href="#">About Us</a>
+    </nav>
+</header>
+
+<section class="category">
+    <div>
+        <ul>
+            <li><a href="#" class="active">Home</a><br></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+</div>
+</section>
+
+<section class="banner">
+    <div><img class="gif" src="/assets/gif/monkey.gif"></div>
+    <div><img class="gif" src="/assets/gif/monkey.gif"></div>
+    <div><img class="gif" src="/assets/gif/monkey.gif"></div>
+
+</section>
+
+    <section class="paragraph">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda dolorum ducimus enim facere facilis incidunt ipsam itaque laborum libero molestias mollitia natus nihil nisi odio perferendis quis sit soluta.</p>
+
+
+
+
+    </section>
+
+
+    <footer>
+    <h5>Developed By Vinod</h5>
+</footer>
+</body>
+</html>
